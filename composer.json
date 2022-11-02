@@ -1,0 +1,15 @@
+{
+    "name": "michaelba/useless-sitemap",
+    "description": "Another useless package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Useless\\Sitemap\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1"
+    }
+}
