@@ -19,7 +19,7 @@ class Generator
     public function save(string $path) : void
     {
         $pathInfo = pathinfo($path);
-        $output = OutputFactory::getInstance($pathInfo['extension']);
+        $output = OutputFactory::getInstance($pathInfo['extension'] ?? '');
         $content = $output->generate($this->pages);
         $this->saveToFile($pathInfo, $content);
     }
